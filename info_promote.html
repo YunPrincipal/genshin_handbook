@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+  <title>원신 핸드북 - 육성정보</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css\info_promote_style.css">
+</head>
+<body class="body">
+
+  <div class="form">
+    <div class="head_box">
+      <div class="head_form">
+      <button type="button" class="head_button" onclick="location.href='index.html'">
+        <div class="head_button_txt">원신 핸드북</div>
+      </button>
+      </div>
+    </div>
+      <div class="list_box">
+        <div class="list_form">
+          <div></div>
+          <div>
+            <button type="button" class="list_button" id="char_button" onclick="location.href='index.html';">
+            <img class="list_icon" src="img\icon_home.webp" height="100px" width="100px">
+            <div class="list_button_txt">홈</div>
+          </button></div>
+          <div>
+            <button type="button" class="list_button" id="char_button" onclick="location.href='char.html';">
+            <img class="list_icon" src="img\icon_char.webp" height="100px" width="100px">
+            <div class="list_button_txt">캐릭터 정보</div>
+          </button></div>
+          <div>
+            <button type="button" class="list_button" id="calculator_button" onclick="location.href='damage_calculator.html';">
+            <img class="list_icon" src="img\Icon_Combat.webp" height="100px" width="100px">
+            <div class="list_button_txt">데미지 계산</div>
+          </div>
+          <div>
+            <button type="button" class="list_button" id="info_promote_button" onclick="location.href='info_promote.html';">
+            <img class="list_icon" src="img\Icon_info.png" height="100px" width="100px">
+            <div class="list_button_txt">육성 정보</div>
+          </div>
+          <div>
+            <button type="button" class="list_button" id="info_wish_button" onclick="location.href='info_wish.html';">
+            <img class="list_icon" src="img\Icon_wish.webp" height="100px" width="100px">
+            <div class="list_button_txt">기원 정보</div>
+          </div>
+      </div>
+      </div>
+
+    <div class="main_box">
+      <div class="main_form">
+
+<!--                     캐릭터 정보                -->
+        <div class="info_promote_char_exp_box1">
+          <img class="info_promote_icon" id="info_promote_icon_exp_book" src="img\info_promote\icon_exp_book.webp">
+          <div></div>
+          <div class="info_promote_char_exp_table">
+            <div class="info_promote_char_exp_table_txt">Lv X to Y</div>
+            <div class="info_promote_char_exp_table_txt">X 권  Y EXP</div>
+          </div>
+        </div>
+        <div class="info_promote_char_exp_box2">
+          <div></div>
+          <div class="info_promote_char_exp_slider_box">
+          <input type="range" class="info_promote_char_exp_slider" id="char_exp_slider" min="0" max="7" value="7" step="1" list="slider_datalist"/>
+          <input type="range" class="info_promote_char_exp_slider1" id="char_exp_slider1" min="0" max="7" value="0" step="1" list="slider_datalist"/>
+          <div></div>
+          <div class="info_promote_char_exp_slider_track">
+            <div class="info_promote_char_exp_slider_range"></div>
+            <div class="info_promote_char_exp_slider_thumb" id="num1"></div>
+            <div class="info_promote_char_exp_slider_thumb" id="num2"></div>
+          </div>
+          </div>
+
+
+          <div class="info_promote_char_exp_box_txt">Level</div>
+        <datalist class="info_promote_char_exp_slider_datalist" id="slider_datalist">
+          <option value="1" label="1"></option>
+          <option value="20" label="20"></option>
+          <option value="40" label="40"></option>
+          <option value="50" label="50"></option>
+          <option value="60" label="60"></option>
+          <option value="70" label="70"></option>
+          <option value="80" label="80"></option>
+          <option value="90" label="90"></option>
+        </datalist>
+        </div>
+
+<!--                     무기 정보                -->
+        <div class="info_promote_weapon_exp_box1">
+          <img class="info_promote_icon" id="info_promote_icon_exp_ore" src="img\info_promote\icon_exp_weapon.webp">
+          <div class="info_promote_weapon_exp_button_set">
+            <button type="button" class="info_promote_weapon_lv_button">5
+            <button type="button" class="info_promote_weapon_lv_button">4
+            <button type="button" class="info_promote_weapon_lv_button">3
+            <button type="button" class="info_promote_weapon_lv_button">2
+            <button type="button" class="info_promote_weapon_lv_button">1
+          </div>
+          <div class="info_promote_weapon_exp_table">
+            <div class="info_promote_weapon_exp_table_txt">Lv X to Y</div>
+            <div class="info_promote_weapon_exp_table_txt">X 개  Y EXP</div>
+          </div>
+        </div>
+        <div class="info_promote_weapon_exp_box2">
+          <div></div>
+          <div class="info_promote_weapon_exp_slider_box">
+          <input type="range" class="info_promote_weapon_exp_slider" id="weapon_exp_slider" min="0" max="7" value="7" step="1" list="slider_datalist1"/>
+          <input type="range" class="info_promote_weapon_exp_slider1" id="weapon_exp_slider1" min="0" max="7" value="0" step="1" list="slider_datalist1"/>
+          <div></div>
+          <div class="info_promote_weapon_exp_slider_track">
+            <div class="info_promote_weapon_exp_slider_range"></div>
+            <div class="info_promote_weapon_exp_slider_thumb" id="weapon_num1"></div>
+            <div class="info_promote_weapon_exp_slider_thumb" id="weapon_num2"></div>
+          </div>
+          </div>
+
+
+          <div class="info_promote_weapon_exp_box_txt">Level</div>
+        <datalist class="info_promote_weapon_exp_slider_datalist" id="slider_datalist1">
+          <option value="1" label="1"></option>
+          <option value="20" label="20"></option>
+          <option value="40" label="40"></option>
+          <option value="50" label="50"></option>
+          <option value="60" label="60"></option>
+          <option value="70" label="70"></option>
+          <option value="80" label="80"></option>
+          <option value="90" label="90"></option>
+        </datalist>
+        </div>
+
+        <div class="image"><img src="img\info_promote\char_exp.png" ></div>
+        <div class="image"><img src="img\info_promote\weapon_exp.png"></div>
+      </div>
+    </div>
+  </div>
+  <script src="info_promote_char_exp_slider.js"></script>
+  <script src="info_promote_weapon_exp_slider.js"></script>
+</body>
+</html>

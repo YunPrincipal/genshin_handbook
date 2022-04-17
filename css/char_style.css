@@ -1,0 +1,290 @@
+
+/*--------------------------------------------------*/
+  /* 전체 폼 스타일 */
+  .body{
+    background-color: #272b33;
+  }
+
+  .form{
+    border:2px solid pink;
+    display:grid;
+    grid-template-columns:180px 1fr;
+  }
+  .head_box{
+          border:2px solid pink;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end:2;
+  }
+  .list_box{
+          border:2px solid pink;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end:3;
+    display:grid;
+  }
+  .main_box{
+          border:2px solid pink;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:2;
+    grid-row-end:3;
+  }
+    /*헤드 폼 스타일*/
+    .head_form{
+      background-image: url('../img/back_paimon.webp');
+      background-size: 15%;
+      background-repeat: no-repeat;
+      background-position: 95% 0%;
+    }
+
+    .head_button{
+      width: 100%;
+      height: 100px;
+      text-align: left;
+      background-color: transparent;
+    }
+
+    .head_button_txt{
+      margin-left: 100px;
+      font-size: 30px;
+      font-weight: bold;
+      color : #ffffff;
+    }
+
+    /*리스트 폼 스타일*/
+    .list_form{
+      border:2px solid gray;
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 80px repeat(5,70px);
+      background-color: #21252b;
+    }
+
+    .list_icon{
+      width:40px;
+      height:40px;
+      object-fit: contain;
+      margin-bottom: 5px;
+    }
+
+    .list_button{
+      margin-left: 5px;
+      margin-top: 10px;
+      width: 90%;
+      height: 40px;
+      object-fit: contain;
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      grid-row: 30px;
+      background-color: transparent;
+    }
+
+    .list_button_txt{
+      margin-top: 10px;
+      font-size: 15px;
+      font-weight: bold;
+      color : #ffffff;
+    }
+
+    /* 메인 폼 스타일 */
+    .main_form{
+      display:grid;
+      grid-template-columns:520px 1fr;
+      grid-template-rows:105px 100px 1fr;
+    }
+    .char_list_box{
+      border:2px solid gray;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start:1;
+      grid-row-end:2;
+    }
+    .char_illust_box{
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start:2;
+      grid-row-end:4;
+    }
+    .char_name_box{
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start:2;
+      grid-row-end:3;
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-top: 30px;
+    }
+    .char_promote_box{
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start:3;
+      grid-row-end:4;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px,1fr));
+      grid-auto-rows: 120px;
+      margin-top: 100px;
+    }
+
+    .char_name_icon{
+      display: grid;
+      grid-template-columns: 70px 70px 1fr;
+    }
+
+    .char_name_txt{
+      font-size: 40px;
+      font-weight: bold;
+      color : #ffffff;
+    }
+
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+
+
+
+    .icon{
+      margin-top: 5px;
+      width:70px;
+      height:70px;
+      object-fit: none;
+    }
+    .promote_icon{
+
+      width:120px;
+      height:120px;
+      object-fit: none;
+    }
+
+/*---------------------------------------*/
+@media(max-width : 1000px){
+/* 전체 폼 스타일 */
+.form{
+  border:2px solid pink;
+  display:grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0px 100px 1fr;
+}
+.head_box{
+  border:5px solid pink;
+  display: none;
+
+}
+.list_box{
+  border:2px solid pink;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.main_box{
+  border:2px solid pink;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+}
+
+  /*리스트 폼 스타일*/
+  .list_form{
+    border:2px solid gray;
+    display:grid;
+    grid-template-columns: 0px repeat(5,1fr);
+    grid-template-rows: 100px;
+    margin-top: 0px;
+  }
+
+  .list_icon{
+    object-fit: contain;
+    margin-bottom: 5px;
+  }
+
+  .list_button{
+    width:100%;
+    height: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .list_button_txt{
+    display: none;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  /* 메인 폼 스타일 */
+  .main_form{
+    border:2px solid gray;
+    display:grid;
+    grid-template-columns:400px 1fr;
+    grid-template-rows:100px 150px 1fr;
+  }
+  .char_list_box{
+    border:2px solid gray;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end:2;
+  }
+  .char_illust_box{
+    border:2px solid gray;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end:4;
+  }
+  .char_name_box{
+    border:2px solid gray;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:2;
+    grid-row-end:3;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .char_promote_box{
+    border:2px solid gray;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:3;
+    grid-row-end:4;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px,1fr));
+    grid-auto-rows: 120px;
+  }
+
+  .char_name_icon{
+    display: grid;
+    grid-template-columns: 70px 70px 1fr;
+  }
+
+  .char_name_txt{
+    font-size: 40px;
+    font-weight: bold;
+    color : #ffffff;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  .icon{
+    width:60px;
+    height: 60px;
+    object-fit: none;
+  }
+  .promote_icon{
+    width:120px;
+    height: 120px;
+    object-fit: none;
+  }
+
+}
