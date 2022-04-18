@@ -1,9 +1,8 @@
 /*--------------------------------------------------*/
 
-    #info_promote_button{
+    #info_wish_button{
       background-color: #537a90;
     }
-
     /* 메인 폼 스타일 */
     .main_form{
       display: grid;
@@ -11,21 +10,21 @@
     }
 
     .info_promote_icon{
-      width: 90%;
+      width: 100%;
       height: auto;
     }
 
     .info_promote_char_exp_box1{
       display: grid;
-      grid-template-columns: 15% 10% 75%;
+      grid-template-columns: 20% 20% 60%;
       margin-top: 40px;
     }
 
     .info_promote_char_exp_table{
-      font-size: 40px;
+      font-size: 50px;
       color: #ffffff;
       margin: 20px;
-      margin-left: 10%;
+      margin-left: 15%;
     }
 
     .info_promote_char_exp_box2{
@@ -42,21 +41,6 @@
       margin-top: 20px;
       margin-left: 40px;
     }
-
-    .info_promote_char_exp_table_txt1{
-      color: #ffffff;
-      border-radius: 10px;
-      background-color:  #3d3f44;
-    }
-
-    .info_promote_char_exp_table_txt{
-      color: #bbbfc7;
-      justify-items: center;
-      display: grid;
-      grid-template-columns: repeat(4,1fr);
-    }
-
-
 
     .info_promote_char_exp_slider_box{
       position: relative;
@@ -154,7 +138,7 @@
 
     .info_promote_weapon_exp_box1{
       display: grid;
-      grid-template-columns: 15% 10% 75%;
+      grid-template-columns: 20% 20% 60%;
       margin-top: 80px;
     }
 
@@ -162,30 +146,14 @@
       display: grid;
       grid-template-columns: 1fr;
       margin-left: 30%;
-      justify-content: center;
-      align-self: center;
-      text-align: center;
-    }
 
-    .info_promote_weapon_exp_button_set input[type=radio]{
-    display: none;
     }
-    .info_promote_weapon_exp_button_set input[type=radio] + label {
-        color: #ffffff;
-        font-size: 2em;
-    }
-    .info_promote_weapon_exp_button_set input[type=radio]:checked + label {
-        color: #ffcc33;
-        border-radius: 10px;
-        background-color: #586682;
-    }
-
 
     .info_promote_weapon_exp_table{
-      font-size: 40px;
+      font-size: 50px;
       color: #ffffff;
       margin: 20px;
-      margin-left: 10%;
+      margin-left: 15%;
     }
 
     .info_promote_weapon_exp_box2{
@@ -201,19 +169,6 @@
       font-size: 20px;
       margin-top: 20px;
       margin-left: 40px;
-    }
-
-    .info_promote_weapon_exp_table_txt1{
-      color: #ffffff;
-      border-radius: 10px;
-      background-color:  #3d3f44;
-    }
-
-    .info_promote_weapon_exp_table_txt{
-            color:  #bbbfc7;
-      justify-items: center;
-      display: grid;
-      grid-template-columns: repeat(4,1fr);
     }
 
     .info_promote_weapon_exp_slider_box{

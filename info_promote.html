@@ -3,48 +3,25 @@
 <head>
   <title>원신 핸드북 - 육성정보</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css\head_box_frame_style.css">
   <link rel="stylesheet" href="css\info_promote_style.css">
+  <link rel="icon" href="img/icon_chichi.png" type="image/x-icon" sizes="16x16">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+       $(".head_box").load("head_box_frame.html");
+       $(".list_box").load("list_box_frame.html");
+     });
+  </script>
+
 </head>
 <body class="body">
 
   <div class="form">
     <div class="head_box">
-      <div class="head_form">
-      <button type="button" class="head_button" onclick="location.href='index.html'">
-        <div class="head_button_txt">원신 핸드북</div>
-      </button>
-      </div>
     </div>
-      <div class="list_box">
-        <div class="list_form">
-          <div></div>
-          <div>
-            <button type="button" class="list_button" id="char_button" onclick="location.href='index.html';">
-            <img class="list_icon" src="img\icon_home.webp" height="100px" width="100px">
-            <div class="list_button_txt">홈</div>
-          </button></div>
-          <div>
-            <button type="button" class="list_button" id="char_button" onclick="location.href='char.html';">
-            <img class="list_icon" src="img\icon_char.webp" height="100px" width="100px">
-            <div class="list_button_txt">캐릭터 정보</div>
-          </button></div>
-          <div>
-            <button type="button" class="list_button" id="calculator_button" onclick="location.href='damage_calculator.html';">
-            <img class="list_icon" src="img\Icon_Combat.webp" height="100px" width="100px">
-            <div class="list_button_txt">데미지 계산</div>
-          </div>
-          <div>
-            <button type="button" class="list_button" id="info_promote_button" onclick="location.href='info_promote.html';">
-            <img class="list_icon" src="img\Icon_info.png" height="100px" width="100px">
-            <div class="list_button_txt">육성 정보</div>
-          </div>
-          <div>
-            <button type="button" class="list_button" id="info_wish_button" onclick="location.href='info_wish.html';">
-            <img class="list_icon" src="img\Icon_wish.webp" height="100px" width="100px">
-            <div class="list_button_txt">기원 정보</div>
-          </div>
-      </div>
-      </div>
+    <div class="list_box">
+    </div>
 
     <div class="main_box">
       <div class="main_form">
@@ -54,8 +31,16 @@
           <img class="info_promote_icon" id="info_promote_icon_exp_book" src="img\info_promote\icon_exp_book.webp">
           <div></div>
           <div class="info_promote_char_exp_table">
-            <div class="info_promote_char_exp_table_txt">Lv X to Y</div>
-            <div class="info_promote_char_exp_table_txt">X 권  Y EXP</div>
+            <div class="info_promote_char_exp_table_txt">
+              Level
+              <div class="info_promote_char_exp_table_txt1" id="char_exp_level_x">&nbsp1&nbsp</div>
+              to
+              <div class="info_promote_char_exp_table_txt1"  id="char_exp_level_y">&nbsp90&nbsp</div>
+              <div class="info_promote_char_exp_table_txt1"  id="char_exp_need_exp">&nbsp8362650&nbsp</div>
+              Exp&nbsp&nbsp(
+              <div class="info_promote_char_exp_table_txt1"  id="char_exp_need_book">&nbsp419&nbsp</div>
+              개)
+            </div>
           </div>
         </div>
         <div class="info_promote_char_exp_box2">
@@ -89,15 +74,24 @@
         <div class="info_promote_weapon_exp_box1">
           <img class="info_promote_icon" id="info_promote_icon_exp_ore" src="img\info_promote\icon_exp_weapon.webp">
           <div class="info_promote_weapon_exp_button_set">
-            <button type="button" class="info_promote_weapon_lv_button">5
-            <button type="button" class="info_promote_weapon_lv_button">4
-            <button type="button" class="info_promote_weapon_lv_button">3
-            <button type="button" class="info_promote_weapon_lv_button">2
-            <button type="button" class="info_promote_weapon_lv_button">1
+            <input type="radio" name="radio1" id="weapon_star_5" checked="checked" value="2" onclick="thum_move(this);">
+            <label class="info_promote_weapon_exp_label" for="weapon_star_5">&nbsp★★★★★&nbsp</label>
+            <input type="radio" name="radio1" id="weapon_star_4" value="1"  onclick="thum_move(this);">
+            <label class="info_promote_weapon_exp_label" for="weapon_star_4">&nbsp&nbsp★★★★&nbsp&nbsp</label>
+            <input type="radio" name="radio1" id="weapon_star_3" value="0"  onclick="thum_move(this);">
+            <label class="info_promote_weapon_exp_label" for="weapon_star_3">&nbsp&nbsp&nbsp★★★&nbsp&nbsp&nbsp</label>
           </div>
           <div class="info_promote_weapon_exp_table">
-            <div class="info_promote_weapon_exp_table_txt">Lv X to Y</div>
-            <div class="info_promote_weapon_exp_table_txt">X 개  Y EXP</div>
+            <div class="info_promote_weapon_exp_table_txt">
+              Level
+              <div class="info_promote_weapon_exp_table_txt1" id="weapon_exp_level_x">&nbsp1&nbsp</div>
+              to
+              <div class="info_promote_weapon_exp_table_txt1" id="weapon_exp_level_y">&nbsp90&nbsp</div>
+              <div class="info_promote_weapon_exp_table_txt1" id="weapon_exp_need_exp">&nbsp9064450&nbsp</div>
+              Exp&nbsp&nbsp(
+              <div class="info_promote_weapon_exp_table_txt1" id="weapon_exp_need_ore">&nbsp907&nbsp</div>
+              개)
+            </div>
           </div>
         </div>
         <div class="info_promote_weapon_exp_box2">
@@ -126,13 +120,10 @@
           <option value="90" label="90"></option>
         </datalist>
         </div>
-
-        <div class="image"><img src="img\info_promote\char_exp.png" ></div>
-        <div class="image"><img src="img\info_promote\weapon_exp.png"></div>
       </div>
     </div>
   </div>
-  <script src="info_promote_char_exp_slider.js"></script>
-  <script src="info_promote_weapon_exp_slider.js"></script>
+  <script src="js/info_promote_char_exp_slider.js"></script>
+  <script src="js/info_promote_weapon_exp_slider.js"></script>
 </body>
 </html>
