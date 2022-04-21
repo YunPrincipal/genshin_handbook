@@ -98,7 +98,6 @@
   @media(max-width : 1000px){
   /* 전체 폼 스타일 */
   .form{
-    border:2px solid pink;
     display:grid;
     width: 100%;
     grid-template-columns: 1fr;
@@ -110,14 +109,12 @@
 
   }
   .list_box{
-    border:2px solid pink;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
   }
   .main_box{
-    border:2px solid pink;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
@@ -127,7 +124,6 @@
 
     /*리스트 폼 스타일*/
     .list_form{
-      border:2px solid gray;
       display:grid;
       grid-template-columns: 0px repeat(5,1fr);
       grid-template-rows: 100px;
