@@ -1,0 +1,63 @@
+
+/*--------------------------------------------------*/
+
+    #index_button{
+      background-color: #537a90;
+    }
+
+    /* 메인 폼 스타일 */
+    .main_form{
+      display: grid;
+    }
+
+    .index_wish_box{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      margin: 15px;
+    }
+
+    .index_wish_box.char{
+
+    }
+
+    .index_wish_box.txt{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      color: #ffffff;
+      font-size: 25px;
+      font-weight: bold;
+      margin-left: 35%;
+    }
+
+    .index_wish_img{
+      max-width: 100%;
+      height: auto;
+      margin: 10px;
+    }
+
+    .index_wish_box.weapon{
+    }
+
+    img{
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+
+
+/*---------------------------------------*/
+@media(max-width : 1000px){
+
+  /* 메인 폼 스타일 */
+  .main_form{
+    display: grid;
+  }
+
+  .index_wish_box{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 15px;
+  }
+
+}
