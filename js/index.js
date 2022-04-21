@@ -1,5 +1,5 @@
 var today = new Date();
-var end_day = new Date ("2022-04-19 17:00:00")
+var end_day = new Date ("2022-05-10 16:00:00")
 
 var day_HTML = document.getElementById('day_interval');
 var hour_HTML = document.getElementById('hour_interval');
