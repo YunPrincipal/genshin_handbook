@@ -11,6 +11,7 @@ var level_x = document.querySelector("#char_exp_level_x");
 var level_y = document.querySelector("#char_exp_level_y");
 var exp = document.querySelector("#char_exp_need_exp");
 var book = document.querySelector("#char_exp_need_book");
+var mora = document.querySelector("#char_exp_need_mora");
 
 
 var level = [1, 20, 40, 50, 60, 70, 80 ,90]
@@ -48,9 +49,8 @@ function thum_move(e){
     }
     level_x.innerHTML = "&nbsp"+level[x]+"&nbsp";
     level_y.innerHTML = "&nbsp"+level[y]+"&nbsp";
-    exp.innerHTML = "&nbsp"+exp_need_value+"&nbsp";
     book.innerHTML = "&nbsp"+Math.ceil(exp_need_value/20000)+"&nbsp";
-
+    mora.innerHTML = "&nbsp"+mora_need_value+"&nbsp";
 
 }
 

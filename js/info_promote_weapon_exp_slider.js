@@ -9,8 +9,8 @@ var weapon_range = document.querySelector(".info_promote_weapon_exp_slider_range
 
 var weapon_level_x = document.querySelector("#weapon_exp_level_x");
 var weapon_level_y = document.querySelector("#weapon_exp_level_y");
-var weapon_exp = document.querySelector("#weapon_exp_need_exp");
 var weapon_ore = document.querySelector("#weapon_exp_need_ore");
+var weapon_mora = document.querySelector("#weapon_exp_need_mora");
 
 
 var weapon_level = [1, 20, 40, 50, 60, 70, 80 ,90]
@@ -52,9 +52,8 @@ function thum_move(e){
     }
     weapon_level_x.innerHTML = "&nbsp"+weapon_level[x]+"&nbsp";
     weapon_level_y.innerHTML = "&nbsp"+weapon_level[y]+"&nbsp";
-    weapon_exp.innerHTML = "&nbsp"+exp_need_value+"&nbsp";
     weapon_ore.innerHTML = "&nbsp"+Math.ceil(exp_need_value/10000)+"&nbsp";
-
+    weapon_mora.innerHTML = "&nbsp"+Math.ceil(exp_need_value/100)*10+"&nbsp";
 }
 
 

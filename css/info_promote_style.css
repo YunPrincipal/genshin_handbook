@@ -7,33 +7,95 @@
     /* 메인 폼 스타일 */
     .main_form{
       display: grid;
-      margin-left:  5%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 70px 1fr;
+      margin:  5%;
     }
 
     .info_promote_icon{
-      width: 90%;
+      width: 1em;
       height: auto;
+    }
+
+    .info_promote{
+      background-color: #2d3440;
+      border-radius: 10px;
+    }
+
+    .info_promote.txt{
+      margin: 20px;
+      color: #ffffff;
+      font-size: 35px;
+      font-weight: bold;
     }
 
     .info_promote_char_exp_box1{
       display: grid;
-      grid-template-columns: 15% 10% 75%;
-      margin-top: 40px;
+      grid-template-columns: 25% 35% 40%;
+      grid-template-rows: 50% 50%;
+      margin-top: 20px;
     }
 
     .info_promote_char_exp_table{
       font-size: 40px;
       color: #ffffff;
-      margin: 20px;
-      margin-left: 10%;
+      margin: 10px;
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+    }
+
+    .info_promote_table{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .info_promote_table.head{
+      display: grid;
+      grid-template-columns: 1fr;
+      align-self: center;
+      justify-self: center;
+    }
+
+    .info_promote_table.char_exp{
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      margin-right: 17%;
+      align-items: center;
+      border-radius: 10px;
+      background-color:  #3d3f44;
+    }
+
+    .info_promote_table.char_exp.Lv{
+      display: grid;
+      margin: 5%;
+      margin-right: 0%;
+      grid-template-columns: 1fr ;
+      background-color:  #2d3440;
+    }
+
+    .info_promote_table.char_exp.txt{
+      display: grid;
+      font-size: 40px;
+      color: #ffffff;
+      grid-template-columns: repeat(4,1fr);
+      background-color:  #2d3440;
+      grid-template-rows:1fr;
+      justify-items: center;
     }
 
     .info_promote_char_exp_box2{
+      grid-column-start: 1;
+      grid-column-end: 4;
+
+
       width: 100%;
       display: grid;
       margin-left: 50px;
       grid-template-columns: 100px 1fr;
       grid-auto-rows: minmax(15px);
+      margin-top: 50px;
+      margin-bottom: 40px;
     }
 
     .info_promote_char_exp_box_txt{
@@ -43,10 +105,15 @@
       margin-left: 40px;
     }
 
+    .info_promote_char_exp_table_txt2{
+      color: #ffffff;
+    }
+
     .info_promote_char_exp_table_txt1{
       color: #ffffff;
       border-radius: 10px;
       background-color:  #3d3f44;
+      justify-self: center;
     }
 
     .info_promote_char_exp_table_txt{
@@ -154,15 +221,16 @@
 
     .info_promote_weapon_exp_box1{
       display: grid;
-      grid-template-columns: 15% 10% 75%;
-      margin-top: 80px;
+      grid-template-columns: 25% 35% 40%;
+      grid-template-rows: 50% 50%;
+      margin-top: 40px;
     }
 
     .info_promote_weapon_exp_button_set{
       display: grid;
       grid-template-columns: 1fr;
-      margin-left: 30%;
-      justify-content: center;
+
+      justify-items: center;
       align-self: center;
       text-align: center;
     }
@@ -173,6 +241,7 @@
     .info_promote_weapon_exp_button_set input[type=radio] + label {
         color: #ffffff;
         font-size: 2em;
+        margin-bottom: 10px;
     }
     .info_promote_weapon_exp_button_set input[type=radio]:checked + label {
         color: #ffcc33;
@@ -191,9 +260,12 @@
     .info_promote_weapon_exp_box2{
       width: 100%;
       display: grid;
+      margin-top: 50px;
       margin-left: 50px;
       grid-template-columns: 100px 1fr;
-      grid-auto-rows: 10px;
+      grid-auto-rows: minmax(15px);
+      grid-column-start: 1;
+      grid-column-end: 4;
     }
 
     .info_promote_weapon_exp_box_txt{
@@ -310,9 +382,7 @@
     }
 
 
-    .image{
-      margin: 100px;
-    }
+
 /*---------------------------------------*/
 @media(max-width : 1000px){
 
@@ -323,6 +393,15 @@
 
   .image{
     margin: 50px;
+  }
+
+  .info_promote_char_exp_table{
+    font-size: 30px;
+    color: #ffffff;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
   }
 
   .info_promote_char_exp_box_txt{
@@ -346,6 +425,16 @@
     grid-template-columns: repeat(4,1fr);
   }
 
+  .info_promote_table.char_exp.txt{
+    display: grid;
+    font-size: 30px;
+    color: #ffffff;
+    grid-template-columns: repeat(4,1fr);
+    background-color:  #2d3440;
+    grid-template-rows:1fr;
+    justify-items: center;
+  }
+
   .info_promote_weapon_exp_box_txt{
     color:#ffffff;
     font-size: 20px;
@@ -355,6 +444,15 @@
 
   .info_promote_weapon_exp_table_txt1{
     color: #ffffff;
+    border-radius: 10px;
+    background-color:  #3d3f44;
+  }
+
+  .info_promote_table.char_exp{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    margin-right: 22%;
+    align-items: center;
     border-radius: 10px;
     background-color:  #3d3f44;
   }

@@ -14,7 +14,7 @@
 }
 .head_box{
   height: 100px;
-  grid-column-start: 1;
+  grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start:1;
   grid-row-end:2;
@@ -22,7 +22,7 @@
 .list_box{
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start:2;
+  grid-row-start:1;
   grid-row-end:3;
   display:grid;
 }
@@ -49,7 +49,7 @@
   }
 
   .head_button_txt{
-    margin-left: 100px;
+    margin-left: 50px;
     font-size: 30px;
     font-weight: bold;
     color : #ffffff;
@@ -59,7 +59,7 @@
   .list_form{
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px repeat(5,70px);
+    grid-template-rows: 200px repeat(5,70px);
     background-color: #21252b;
   }
 

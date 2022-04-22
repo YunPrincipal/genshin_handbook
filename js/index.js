@@ -2,8 +2,7 @@ var today = new Date();
 var end_day = new Date ("2022-05-10 16:00:00")
 
 var day_HTML = document.getElementById('day_interval');
-var hour_HTML = document.getElementById('hour_interval');
-var min_HTML = document.getElementById('min_interval');
+var day_HTML2 = document.getElementById('day_interval1');
 
 
 var day_interval = end_day - today;
@@ -13,7 +12,30 @@ var hour_interval = Math.floor((day_interval % (1000 * 60 * 60 * 24)) / (1000 * 
 var min_interval = Math.floor((day_interval % (1000 * 60 * 60)) / (1000 * 60));
 var sec_interval = Math.floor((day_interval % (1000 * 60)) / 1000);
 
-console.log(hour_interval);
 
 
-day_HTML.innerHTML = day1_interval+"일&nbsp"+hour_interval+"시간&nbsp"+min_interval+"분&nbsp"+"남았음";
+day_HTML.innerHTML = "&nbsp&nbsp"+day1_interval+"일&nbsp"+hour_interval+"시간&nbsp&nbsp"
+day_HTML2.innerHTML = "&nbsp&nbsp"+day1_interval+"일&nbsp"+hour_interval+"시간&nbsp&nbsp"
+
+var monday = document.getElementById('mon');
+var tuesday = document.getElementById('tue');
+var wednesday = document.getElementById('wed');
+
+today.setHours(today.getHours()-5);
+var farming_today = today
+var day_of_the_week = farming_today.getDay()%3;
+
+if(day_of_the_week == 1){
+  monday.style.backgroundColor = '#537a90';
+}
+else if(day_of_the_week == 2){
+  tuesday.style.backgroundColor = '#537a90';
+}
+else if(day_of_the_week == 3){
+  wednesday.style.backgroundColor = '#537a90';
+}
+else{
+  monday.style.backgroundColor = '#537a90';
+  tuesday.style.backgroundColor = '#537a90';
+  wednesday.style.backgroundColor = '#537a90';
+}
