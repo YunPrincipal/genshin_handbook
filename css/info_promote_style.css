@@ -396,7 +396,7 @@
   }
 
   .info_promote_char_exp_table{
-    font-size: 30px;
+    font-size: 20px;
     color: #ffffff;
     margin: 5px;
     display: grid;
@@ -406,7 +406,7 @@
 
   .info_promote_char_exp_box_txt{
     color:#ffffff;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 20px;
     margin-left: 40px;
   }
@@ -427,7 +427,7 @@
 
   .info_promote_table.char_exp.txt{
     display: grid;
-    font-size: 30px;
+    font-size: 20px;
     color: #ffffff;
     grid-template-columns: repeat(4,1fr);
     background-color:  #2d3440;

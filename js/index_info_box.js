@@ -12,7 +12,6 @@ for ( i =0; i<=2; i++){
 
       for ( j =0; j<=5; j++){
         var img_name = dir_name+"/"+String(j+1)+"_.webp";
-        console.log(img_name);
         document.write("<img src='"+img_name+"' class='index_info_box_item_img'>");
       }
       document.write("</div>");

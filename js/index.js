@@ -23,15 +23,15 @@ var wednesday = document.getElementById('wed');
 
 today.setHours(today.getHours()-5);
 var farming_today = today
-var day_of_the_week = farming_today.getDay()%3;
+var day_of_the_week = farming_today.getDay()%7 ;
 
-if(day_of_the_week == 1){
+if(day_of_the_week == 1 || day_of_the_week == 4){
   monday.style.backgroundColor = '#537a90';
 }
-else if(day_of_the_week == 2){
+else if(day_of_the_week == 2 || day_of_the_week == 5){
   tuesday.style.backgroundColor = '#537a90';
 }
-else if(day_of_the_week == 3){
+else if(day_of_the_week == 3 || day_of_the_week == 6){
   wednesday.style.backgroundColor = '#537a90';
 }
 else{
