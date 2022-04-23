@@ -120,12 +120,21 @@
   /* 메인 폼 스타일 */
   .main_form{
     display: grid;
+      grid-template-columns: 1fr;
   }
 
   .index_wish_box{
     display: grid;
     grid-template-columns: 1fr;
     margin: 15px;
+  }
+
+  .index_info_box{
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
 
 }
