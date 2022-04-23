@@ -1,0 +1,283 @@
+/*--------------------------------------------------*/
+
+    #info_wish_button{
+      background-color: #537a90;
+    }
+    /* 메인 폼 스타일 */
+    .main_form{
+      display: grid;
+      margin-left:  5%;
+    }
+
+    .info_promote_icon{
+      width: 100%;
+      height: auto;
+    }
+
+    .info_promote_char_exp_box1{
+      display: grid;
+      grid-template-columns: 20% 20% 60%;
+      margin-top: 40px;
+    }
+
+    .info_promote_char_exp_table{
+      font-size: 50px;
+      color: #ffffff;
+      margin: 20px;
+      margin-left: 15%;
+    }
+
+    .info_promote_char_exp_box2{
+      width: 100%;
+      display: grid;
+      margin-left: 50px;
+      grid-template-columns: 100px 1fr;
+      grid-auto-rows: 10px;
+    }
+
+    .info_promote_char_exp_box_txt{
+      color:#ffffff;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-left: 40px;
+    }
+
+    .info_promote_char_exp_slider_box{
+      position: relative;
+    }
+
+    .info_promote_char_exp_slider{
+      -webkit-appearance: none;
+      position: absolute;
+      opacity: 0%;
+      height: 15px;
+      width:82%;
+      pointer-events: none;
+      z-index: 2;
+
+    }
+
+    .info_promote_char_exp_slider1{
+      -webkit-appearance: none;
+      position: absolute;
+      opacity: 0%;
+      height: 15px;
+      width:82%;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .info_promote_char_exp_slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      pointer-events: all;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: #04AA6D;
+    }
+
+    .info_promote_char_exp_slider1::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      pointer-events: all;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: #04AA6D;
+    }
+
+    .info_promote_char_exp_slider_datalist{
+      display:grid;
+      grid-template-columns: repeat(9,1fr);
+      color:#ffffff;
+      font-weight: bold;
+      font-size: 27px;
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      z-index: 1;
+    }
+
+    .info_promote_char_exp_slider_track{
+      opacity: 100%;
+      position: relative;
+      margin-left: 2.5%;
+      width: 78%;
+      height: 0.5rem;
+      background-color: #bdc3c7;
+      border-radius: 0.5rem;
+      margin-top: 5px;
+      z-index: 1;
+    }
+
+    .info_promote_char_exp_slider_range{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #0075ff;
+      border-radius: 0.5rem;
+    }
+
+    .info_promote_char_exp_slider_thumb {
+      position: absolute;
+      top: 0;
+      transform: translateY(-0.25rem);
+      width: 1rem;
+      height: 1rem;
+      background-color: #2850ad;
+      border-radius: 0.5rem;
+    }
+
+    #num2{
+      right:0;
+    }
+
+
+    .info_promote_weapon_exp_box1{
+      display: grid;
+      grid-template-columns: 20% 20% 60%;
+      margin-top: 80px;
+    }
+
+    .info_promote_weapon_exp_button_set{
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-left: 30%;
+
+    }
+
+    .info_promote_weapon_exp_table{
+      font-size: 50px;
+      color: #ffffff;
+      margin: 20px;
+      margin-left: 15%;
+    }
+
+    .info_promote_weapon_exp_box2{
+      width: 100%;
+      display: grid;
+      margin-left: 50px;
+      grid-template-columns: 100px 1fr;
+      grid-auto-rows: 10px;
+    }
+
+    .info_promote_weapon_exp_box_txt{
+      color:#ffffff;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-left: 40px;
+    }
+
+    .info_promote_weapon_exp_slider_box{
+      position: relative;
+    }
+
+    .info_promote_weapon_exp_slider{
+      -webkit-appearance: none;
+      position: absolute;
+      opacity: 0%;
+      height: 15px;
+      width:82%;
+      pointer-events: none;
+      z-index: 2;
+
+    }
+
+    .info_promote_weapon_exp_slider1{
+      -webkit-appearance: none;
+      position: absolute;
+      opacity: 0%;
+      height: 15px;
+      width:82%;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .info_promote_weapon_exp_slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      pointer-events: all;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: #04AA6D;
+    }
+
+    .info_promote_weapon_exp_slider1::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      pointer-events: all;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: #04AA6D;
+    }
+
+    .info_promote_weapon_exp_slider_datalist{
+      display:grid;
+      grid-template-columns: repeat(9,1fr);
+      color:#ffffff;
+      font-weight: bold;
+      font-size: 27px;
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      z-index: 1;
+    }
+
+    .info_promote_weapon_exp_slider_track{
+      opacity: 100%;
+      position: relative;
+      margin-left: 2.5%;
+      width: 78%;
+      height: 0.5rem;
+      background-color: #bdc3c7;
+      border-radius: 0.5rem;
+      margin-top: 5px;
+      z-index: 1;
+    }
+
+    .info_promote_weapon_exp_slider_range{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #0075ff;
+      border-radius: 0.5rem;
+    }
+
+    .info_promote_weapon_exp_slider_thumb {
+      position: absolute;
+      top: 0;
+      transform: translateY(-0.25rem);
+      width: 1rem;
+      height: 1rem;
+      background-color: #2850ad;
+      border-radius: 0.5rem;
+    }
+
+    #weapon_num2{
+      right:0;
+    }
+
+
+    .image{
+      margin: 100px;
+    }
+/*---------------------------------------*/
+@media(max-width : 1000px){
+
+
+  /* 메인 폼 스타일 */
+  .main_form{
+  }
+
+  .image{
+    margin: 50px;
+  }
+
+}
