@@ -98,12 +98,37 @@
 
     .index_info_box_item.img{
       display: grid;
+      margin: 10px;
       grid-template-columns: repeat(3,1fr);
       grid-template-rows: 50% 50%;
     }
 
     .index_info_box_item_img{
-      width: 100%;
+      background-color: transparent;
+      background-size: 100%;
+      border-color: #2d3440;
+      padding: 0px;
+      display: grid;
+    }
+
+    .index_info_box_item_img:hover .index_info_box_item_name{
+      display: grid;
+    }
+
+    .index_info_box_item_name{
+      display: none;
+      width: 95%;
+      height: 95%;
+      margin-left: 2px;
+      align-self: end;
+      background-color: #2d3440;
+      opacity: 0.85;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 10px;
+      align-items: center;
+      justify-items: center;
     }
 
 
