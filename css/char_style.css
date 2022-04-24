@@ -9,7 +9,7 @@
     .main_form{
       display:grid;
       grid-template-columns:1fr;
-      grid-template-rows:150px 1fr;
+      grid-template-rows:160px 1fr;
     }
 
     .char_list_box{
@@ -18,10 +18,27 @@
       grid-row-start:1;
       grid-row-end:2;
       margin-top: 10px;
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
 
       display:grid;
-      grid-template-columns: repeat(auto-fill, minmax(130px,1fr));
+      /*grid-template-columns: repeat(auto-fill, minmax(130px,1fr));*/
+      grid-auto-columns: 130px;
+      grid-auto-flow: column;
       justify-items: center;
+    }
+
+    .char_list_box::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    .char_list_box::-webkit-scrollbar-thumb {
+      background-color: #537a90;
+      border-radius: 20px;
+    }
+
+    .char_list_box::-webkit-scrollbar-track {
+      background-color: #2d3440;
     }
 
     .char_list_button{
@@ -56,6 +73,8 @@
       font-size: 0px;
       display: grid;
       grid-template-columns: 0% 1fr 1fr;
+
+      margin-top: 20px;
 
     }
 
