@@ -105,9 +105,10 @@
 
     .index_info_box_item_img{
       background-color: transparent;
+      background-position: center;
+      background-repeat: no-repeat;
       background-size: 100%;
       border-color: #2d3440;
-      padding: 0px;
       display: grid;
     }
 
@@ -155,11 +156,19 @@
   }
 
   .index_info_box{
-
+    display: grid;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: #2d3440;
+    grid-template-rows: 7% repeat(3,1fr);
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
+  }
+
+  .index_info_box_item_img{
+    height: 250px;
   }
 
 }
