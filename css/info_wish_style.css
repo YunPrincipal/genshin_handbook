@@ -41,6 +41,17 @@
   .main_form{
   }
 
-
+  .info_sheet{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 92vw;
+    height: 720px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .info_sheet.weapon{
+    height: 950px;
+  }
 
 }
