@@ -8,136 +8,270 @@
     /* 메인 폼 스타일 */
     .main_form{
       display:grid;
-      grid-template-columns:520px 1fr;
-      grid-template-rows:105px 100px 1fr;
+      grid-template-columns:1fr 1fr;
     }
-    .char_list_box{
-      border:2px solid gray;
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start:1;
-      grid-row-end:2;
-    }
-    .char_illust_box{
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start:2;
-      grid-row-end:4;
-    }
-    .char_name_box{
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start:2;
-      grid-row-end:3;
+
+    .info_promote.box{
+      background-color: #2d3440;
+      border-radius: 10px;
+      margin: 2%;
       display: grid;
       grid-template-columns: 1fr;
-      margin-top: 30px;
     }
-    .char_promote_box{
+
+    .info_promote.head{
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: bold;
+      margin: 2%;
+    }
+
+    .info_promote.txt{
+      color : #ffffff;
+      font-size: 2vw;
+    }
+
+
+    .info_promote.icon{
+      background-color: #21252b;
+      margin: 5%;
+      margin-left: 15%;
+      border-radius: 20px;
+      width: 90%;
+    }
+
+    .info_promote.material_box{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .info_promote.material{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-items : center;
+      margin: 7%;
+
+      border-color: #537a90;
+      border-style: solid 1px;
+      border-radius: 15px;
+      border-style: solid;
+
+    }
+
+    .info_promote.material.number4{
+      grid-template-columns: 20% 1fr;
+      margin: 3%;
+    }
+
+    .info_promote.material.lv_box{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      margin: 1%;
+      margin-top: 3%;
+      padding: 2%;
+      padding-left: 5%;
+      padding-right: 5%;
+
+      border-color: #2d3440;
+
+      justify-self: center;
+    }
+
+    .info_promote.txt.lv{
+      background-color: #21252b;
+      border-radius: 10px;
+      padding-left: 30%;
+      padding-right: 30%;
+    }
+
+    .info_promote.material.slider_box{
+      position: relative;
+      grid-template-columns: 1fr;
+      margin: 3%;
+      margin-top: 0%;
+      border-style: none;
+    }
+
+    .info_promote.exp_slider{
+      -webkit-appearance: none;
+      position: absolute;
+      opacity: 0%;
+      height: 15px;
+      width:36vw;
+      margin-bottom: 5.3vw;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .info_promote.exp_slider::-webkit-slider-thumb{
+      -webkit-appearance: none;
+      appearance: none;
+      pointer-events: all;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: #04AA6D;
+    }
+
+    .info_promote.exp_slider_track{
+      opacity: 100%;
+      position: relative;
+      margin-top: 0%;
+      margin-bottom: 4%;
+      width: 35vw;
+      height: 0.5rem;
+      background-color: #bdc3c7;
+      border-radius: 0.5rem;
+    }
+
+    .info_promote.exp_slider_range{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #0075ff;
+      border-radius: 0.5rem;
+    }
+
+    .info_promote.exp_slider_thumb{
+      position: absolute;
+      top: 0;
+      transform: translateY(-0.25rem);
+      width: 1rem;
+      height: 1rem;
+      background-color: #2850ad;
+      border-radius: 0.5rem;
+    }
+
+    .info_promote.exp_slider_datalist{
+      display:grid;
+      grid-template-columns: repeat(8,1fr);
+      color:#ffffff;
+      font-weight: bold;
+      font-size: 2vw;
+      margin-bottom: 3vw;
+    }
+    option{
+      margin-left: 1.1vw;
+      margin-right: 1.1vw;
+      justify-self: center;
+    }
+
+/*----------무기 등급 레이아웃----------------*/
+
+
+    .info_promote.weapon_star_box{
+      display: grid;
+      grid-template-columns: 1fr;
+      font-size: 0.7rem;
+
+      justify-items: center;
+      align-self: center;
+      text-align: center;
+    }
+
+
+    .info_promote.weapon_star_box input[type=radio]{
+    display: none;
+    }
+    .info_promote.weapon_star_box input[type=radio] + label {
+        color: #ffffff;
+        font-size: 1.7vw;
+        margin-bottom: 10px;
+    }
+    .info_promote.weapon_star_box input[type=radio]:checked + label {
+        color: #ffcc33;
+        border-radius: 10px;
+        background-color: #586682;
+    }
+
+
+    /*-----------무기 박스 레이아웃-----------------*/
+    #weapon_box{
+      grid-template-columns: 30% 1fr;
+    }
+
+    .info_promote.head.weapon{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    .info_promote.material_box.weapon{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    .info_promote.weapon_star_box{
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+
+    .info_promote.material.number4.weapon{
       grid-column-start: 2;
       grid-column-end: 3;
-      grid-row-start:3;
-      grid-row-end:4;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(120px,1fr));
-      grid-auto-rows: 120px;
-      margin-top: 100px;
+      grid-row-start: 3;
+      grid-row-end: 4;
     }
 
-    .char_name_icon{
-      display: grid;
-      grid-template-columns: 70px 70px 1fr;
+    .info_promote.material.lv_box.weapon{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 5;
     }
 
-    .char_name_txt{
-      font-size: 40px;
-      font-weight: bold;
-      color : #ffffff;
+    .info_promote.material.slider_box.weapon{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 5;
+      grid-row-end: 6;
     }
 
 
 
-    .icon{
-      margin-top: 5px;
-      width:70px;
-      height:70px;
-      object-fit: none;
-    }
-    .promote_icon{
-
-      width:120px;
-      height:120px;
-      object-fit: none;
+    #char_num2{
+      right:0;
     }
 
+    #weapon_num2{
+      right:0;
+    }
 /*---------------------------------------*/
 @media(max-width : 1000px){
 
   /* 메인 폼 스타일 */
   .main_form{
-    border:2px solid gray;
     display:grid;
-    grid-template-columns:400px 1fr;
-    grid-template-rows:100px 150px 1fr;
-  }
-  .char_list_box{
-    border:2px solid gray;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start:1;
-    grid-row-end:2;
-  }
-  .char_illust_box{
-    border:2px solid gray;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start:2;
-    grid-row-end:4;
-  }
-  .char_name_box{
-    border:2px solid gray;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start:2;
-    grid-row-end:3;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .char_promote_box{
-    border:2px solid gray;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start:3;
-    grid-row-end:4;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px,1fr));
-    grid-auto-rows: 120px;
+    grid-template-columns:1fr;
   }
 
-  .char_name_icon{
-    display: grid;
-    grid-template-columns: 70px 70px 1fr;
+  .info_promote.txt{
+    font-size: 4.5vw;
   }
 
-  .char_name_txt{
-    font-size: 40px;
-    font-weight: bold;
-    color : #ffffff;
+  .info_promote.weapon_star_box input[type=radio] + label {
+    font-size: 3vw;
   }
 
-  img{
-    max-width: 100%;
-    height: auto;
+  .info_promote.exp_slider{
+    width: 82vw;
   }
-  .icon{
-    width:60px;
-    height: 60px;
-    object-fit: none;
+
+  .info_promote.exp_slider_track{
+    width: 80vw;
   }
-  .promote_icon{
-    width:120px;
-    height: 120px;
-    object-fit: none;
+
+  .info_promote.exp_slider_datalist{
+    width: 90vw;
+    font-size: 3vw;
   }
 
 }
