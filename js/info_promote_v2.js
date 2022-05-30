@@ -28,7 +28,7 @@ function info_promote_box_maker(id){
                   +"</div>"
 
 
-                  +"<div class='info_promote material number4 "+category[x]+"'>"
+                  +"<div class='info_promote material number_mora "+category[x]+"'>"
                     +"<img class='info_promote icon mora' src='img/info_promote/icon_mora.webp'>"
                     +"<div class='info_promote txt mora' id='"+category[x]+"_mora_txt'>"+defalut_value[x][3]+"</div>"
                   +"</div>"

@@ -52,7 +52,7 @@
       border-style: solid;
       padding: 0px;
       display: grid;
-
+      opacity: 0.6;
     }
 
     .char_list_button_name{

@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+  <title>원신 핸드북 - 육성정보</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css\head_box_frame_style.css">
+  <link rel="stylesheet" href="css\info_promote_style.css">
+  <link rel="icon" href="img/icon_chichi.png" type="image/x-icon" sizes="16x16">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+       $(".head_box").load("head_box_frame.html");
+       $(".list_box").load("list_box_frame.html");
+     });
+  </script>
+
+</head>
+<body class="body">
+
+  <div class="form">
+    <div class="head_box">
+    </div>
+    <div class="list_box">
+    </div>
+
+    <div class="main_box">
+      <div class="main_form">
+
+<!--                     캐릭터 정보                -->
+      <div class="info_promote char_exp">
+        <div class="info_promote txt">캐릭터 경험치</div>
+        <div class="info_promote_char_exp_box1">
+                    <div></div>
+          <div class="info_promote_table char_exp Lv">
+            <div class="info_promote_table char_exp txt">
+            <div>&nbspLv&nbsp</div>
+            <div class="info_promote_char_exp_table_txt1" id="char_exp_level_x">&nbsp1&nbsp</div>
+            <div>&nbspto&nbsp</div>
+            <div class="info_promote_char_exp_table_txt1"  id="char_exp_level_y">&nbsp90&nbsp</div>
+          </div>
+          </div>
+
+          <div class="info_promote_char_exp_table">
+
+            <div class="info_promote_table char_exp">
+              <img class="info_promote_icon" id="info_promote_icon_exp_book" src="img\info_promote\icon_exp_book.webp" >
+              <div class="info_promote_char_exp_table_txt2"  id="char_exp_need_book">&nbsp419&nbsp</div>
+            </div>
+            <div class="info_promote_table char_exp">
+              <img class="info_promote_icon" id="info_promote_icon_mora" src="img\info_promote\icon_mora.webp">
+              <div class="info_promote_char_exp_table_txt2"  id="char_exp_need_mora">&nbsp1672000&nbsp</div>
+            </div>
+
+          </div>
+
+        <div class="info_promote_char_exp_box2">
+          <div></div>
+          <div class="info_promote_char_exp_slider_box">
+          <input type="range" class="info_promote_char_exp_slider" id="char_exp_slider" min="0" max="7" value="7" step="1" list="slider_datalist"/>
+          <input type="range" class="info_promote_char_exp_slider1" id="char_exp_slider1" min="0" max="7" value="0" step="1" list="slider_datalist"/>
+          <div></div>
+          <div class="info_promote_char_exp_slider_track">
+            <div class="info_promote_char_exp_slider_range"></div>
+            <div class="info_promote_char_exp_slider_thumb" id="num1"></div>
+            <div class="info_promote_char_exp_slider_thumb" id="num2"></div>
+          </div>
+          </div>
+
+
+          <div class="info_promote_char_exp_box_txt">Level</div>
+        <datalist class="info_promote_char_exp_slider_datalist" id="slider_datalist">
+          <option value="1" label="1"></option>
+          <option value="20" label="20"></option>
+          <option value="40" label="40"></option>
+          <option value="50" label="50"></option>
+          <option value="60" label="60"></option>
+          <option value="70" label="70"></option>
+          <option value="80" label="80"></option>
+          <option value="90" label="90"></option>
+        </datalist>
+          </div>
+        </div>
+      </div>
+
+      <!-- 중간 빈칸-->
+      <div></div>
+
+<!--                     무기 정보                -->
+      <div class="info_promote weapon_exp">
+        <div class="info_promote txt">무기 경험치</div>
+        <div class="info_promote_weapon_exp_box1">
+          <div class="info_promote_weapon_exp_button_set">
+            <input type="radio" name="radio1" id="weapon_star_5" checked="checked" value="2" onclick="thum_move(this);">
+            <label class="info_promote_weapon_exp_label" for="weapon_star_5">&nbsp★★★★★&nbsp</label>
+            <input type="radio" name="radio1" id="weapon_star_4" value="1"  onclick="thum_move(this);">
+            <label class="info_promote_weapon_exp_label" for="weapon_star_4">&nbsp&nbsp★★★★&nbsp&nbsp</label>
+            <input type="radio" name="radio1" id="weapon_star_3" value="0"  onclick="thum_move(this);">
+            <label class="info_promote_weapon_exp_label" for="weapon_star_3">&nbsp&nbsp&nbsp★★★&nbsp&nbsp&nbsp</label>
+          </div>
+          <div class="info_promote_table char_exp Lv">
+            <div class="info_promote_table char_exp txt">
+            <div>&nbspLv&nbsp</div>
+            <div class="info_promote_char_exp_table_txt1" id="weapon_exp_level_x">&nbsp1&nbsp</div>
+            <div>&nbspto&nbsp</div>
+            <div class="info_promote_char_exp_table_txt1"  id="weapon_exp_level_y">&nbsp90&nbsp</div>
+          </div>
+          </div>
+          <div class="info_promote_char_exp_table">
+
+            <div class="info_promote_table char_exp">
+              <img class="info_promote_icon" id="info_promote_icon_exp_book" src="img\info_promote\icon_exp_weapon.webp" >
+              <div class="info_promote_char_exp_table_txt2"  id="weapon_exp_need_ore">&nbsp907&nbsp</div>
+            </div>
+            <div class="info_promote_table char_exp">
+              <img class="info_promote_icon" id="info_promote_icon_mora" src="img\info_promote\icon_mora.webp">
+              <div class="info_promote_char_exp_table_txt2"  id="weapon_exp_need_mora">&nbsp906450&nbsp</div>
+            </div>
+
+          </div>
+          <div class="info_promote_weapon_exp_box2">
+            <div></div>
+            <div class="info_promote_weapon_exp_slider_box">
+            <input type="range" class="info_promote_weapon_exp_slider" id="weapon_exp_slider" min="0" max="7" value="7" step="1" list="slider_datalist1"/>
+            <input type="range" class="info_promote_weapon_exp_slider1" id="weapon_exp_slider1" min="0" max="7" value="0" step="1" list="slider_datalist1"/>
+            <div></div>
+            <div class="info_promote_weapon_exp_slider_track">
+              <div class="info_promote_weapon_exp_slider_range"></div>
+              <div class="info_promote_weapon_exp_slider_thumb" id="weapon_num1"></div>
+              <div class="info_promote_weapon_exp_slider_thumb" id="weapon_num2"></div>
+            </div>
+            </div>
+
+
+            <div class="info_promote_weapon_exp_box_txt">Level</div>
+          <datalist class="info_promote_weapon_exp_slider_datalist" id="slider_datalist1">
+            <option value="1" label="1"></option>
+            <option value="20" label="20"></option>
+            <option value="40" label="40"></option>
+            <option value="50" label="50"></option>
+            <option value="60" label="60"></option>
+            <option value="70" label="70"></option>
+            <option value="80" label="80"></option>
+            <option value="90" label="90"></option>
+          </datalist>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="js/info_promote_char_exp_slider.js"></script>
+  <script src="js/info_promote_weapon_exp_slider.js"></script>
+</body>
+</html>
