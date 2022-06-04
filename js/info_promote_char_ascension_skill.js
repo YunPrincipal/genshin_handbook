@@ -161,8 +161,12 @@ function info_promote_char_skill_box_maker(id){
 
 
  div.innerHTML = "<div class='info_promote head "+category[x]+"' >"+head_text[x]
- +"<div class='info_promote material number_multiply'>"
-   +"<div class='info_promote txt' id='"+category[x]+"_multiply'>"+defalut_value[x][9]+"</div></div>"
+ +"<div class='info_promote char_combo_box_form number_multiply'>"
+   +"<select class='info_promote char_combo_box multiply' id='"+category[x]+"_multiply_select' >"
+   +"<option value='1'>x 1</option>"
+   +"<option value='2'>x 2</option>"
+   +"<option value='3'>x 3</option>"
+   +"</select></div>"
                  +"<div class='info_promote char_combo_box_form "+category[x]+"'>"
                  +skill_combo_box_txt
                  +"</div>"
@@ -275,6 +279,8 @@ function skill_combo_box_change(value){
   document.getElementById("skill_material_icon_4").src = './img/char/material/'+char_info[num][10]+'.webp';
 
 }
+
+
 
 info_promote_char_ascension_box_maker("char_ascension_box");
 info_promote_char_skill_box_maker("char_skill_box");

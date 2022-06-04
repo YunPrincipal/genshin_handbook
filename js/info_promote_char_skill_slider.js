@@ -1,3 +1,5 @@
+var multiply = document.getElementById("skill_multiply_select");
+
 var skill_slider_left = document.getElementById("skill_exp_slider");
 var skill_slider_right = document.getElementById('skill_exp_slider1');
 
@@ -33,6 +35,7 @@ var skill_book_need = [[3,0,0,0,6,0,0,0],
                       [0,0,16,2,0,0,12,1]]
 var skill_mora_need = [12500, 17500, 25000, 30000, 37500, 120000,260000,450000,700000]
 function thum_move(e){
+  multiply_num = multiply.value;
   x = skill_slider_left.value;
   y = skill_slider_right.value;
   z = 0;
@@ -67,18 +70,18 @@ function thum_move(e){
     skill_lv_x.innerHTML = skill_level[x];
     skill_lv_y.innerHTML = skill_level[y];
 
-    skill_material1.innerHTML = "&nbsp"+skill_book_need_value[0]+"&nbsp";
-    skill_material2.innerHTML = "&nbsp"+skill_book_need_value[1]+"&nbsp";
-    skill_material3.innerHTML = "&nbsp"+skill_book_need_value[2]+"&nbsp";
-    skill_material4.innerHTML = "&nbsp"+skill_book_need_value[3]+"&nbsp";
-    skill_material5.innerHTML = "&nbsp"+skill_book_need_value[4]+"&nbsp";
-    skill_material6.innerHTML = "&nbsp"+skill_book_need_value[5]+"&nbsp";
-    skill_material7.innerHTML = "&nbsp"+skill_book_need_value[6]+"&nbsp";
-    skill_material8.innerHTML = "&nbsp"+skill_book_need_value[7]+"&nbsp";
-    skill_mora.innerHTML = "&nbsp"+skill_mora_need_value.toLocaleString()+"&nbsp";
+    skill_material1.innerHTML = "&nbsp"+skill_book_need_value[0]*multiply_num+"&nbsp";
+    skill_material2.innerHTML = "&nbsp"+skill_book_need_value[1]*multiply_num+"&nbsp";
+    skill_material3.innerHTML = "&nbsp"+skill_book_need_value[2]*multiply_num+"&nbsp";
+    skill_material4.innerHTML = "&nbsp"+skill_book_need_value[3]*multiply_num+"&nbsp";
+    skill_material5.innerHTML = "&nbsp"+skill_book_need_value[4]*multiply_num+"&nbsp";
+    skill_material6.innerHTML = "&nbsp"+skill_book_need_value[5]*multiply_num+"&nbsp";
+    skill_material7.innerHTML = "&nbsp"+skill_book_need_value[6]*multiply_num+"&nbsp";
+    skill_material8.innerHTML = "&nbsp"+skill_book_need_value[7]*multiply_num+"&nbsp";
+    skill_mora.innerHTML = "&nbsp"+(skill_mora_need_value*multiply_num).toLocaleString()+"&nbsp";
 
 }
 
-
+multiply.addEventListener("input",thum_move);
 skill_slider_left.addEventListener("input",thum_move);
 skill_slider_right.addEventListener("input",thum_move);
