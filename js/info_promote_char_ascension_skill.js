@@ -128,7 +128,7 @@ function info_promote_char_ascension_box_maker(id){
 
                   div.innerHTML = div.innerHTML+"<div class='info_promote material lv_box "+category[x]+"'>"
                                         +"<div class='info_promote txt lv' id='"+category[x]+"_lv_x'>1</div>"
-                                        +"<div class='info_promote txt'>&nbsp&nbspto&nbsp&nbsp</div>"
+                                        +"<div class='info_promote txt'>&nbsp&nbsp&nbsp&nbspto&nbsp&nbsp&nbsp&nbsp</div>"
                                         +"<div class='info_promote txt lv' id='"+category[x]+"_lv_y'>90</div>"
                                       +"</div>"
                                       +"<div class='info_promote material slider_box "+category[x]+"'>"
@@ -211,7 +211,7 @@ function info_promote_char_skill_box_maker(id){
 
                  div.innerHTML = div.innerHTML+"<div class='info_promote material lv_box "+category[x]+"'>"
                                        +"<div class='info_promote txt lv' id='"+category[x]+"_lv_x'>1</div>"
-                                       +"<div class='info_promote txt'>&nbsp&nbspto&nbsp&nbsp</div>"
+                                       +"<div class='info_promote txt'>&nbsp&nbsp&nbsp&nbspto&nbsp&nbsp&nbsp&nbsp</div>"
                                        +"<div class='info_promote txt lv' id='"+category[x]+"_lv_y'>10</div>"
                                      +"</div>"
                                      +"<div class='info_promote material slider_box "+category[x]+"'>"
