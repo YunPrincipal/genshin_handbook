@@ -42,7 +42,7 @@
       color : #ffffff;
       border-radius: 10px;
       border-style: none;
-      font-size: 1.5vw;
+      font-size: 22px;
       font-weight: bold;
       text-align: left;
 
@@ -244,7 +244,6 @@
     .info_promote.weapon_star_box{
       display: grid;
       grid-template-columns: 1fr;
-      font-size: 0.7rem;
 
       justify-items: center;
       align-self: center;
@@ -341,11 +340,11 @@
   }
 
   .info_promote.txt{
-    font-size: 4.5vw;
+    font-size: 4vw;
   }
 
   .info_promote.weapon_star_box input[type=radio] + label {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 
   .info_promote.exp_slider{

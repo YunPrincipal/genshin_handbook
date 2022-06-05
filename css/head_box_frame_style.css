@@ -30,7 +30,7 @@
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start:1;
-  grid-row-end:3;
+  grid-row-end:4;
   display:grid;
 }
 .main_box{
@@ -38,6 +38,11 @@
   grid-column-end: 3;
   grid-row-start:2;
   grid-row-end:3;
+}
+
+.tale_box{
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
   /*헤드 폼 스타일*/
   .head_form{
@@ -101,6 +106,17 @@
     color : #ffffff;
   }
 
+  /*테일 박스 폼*/
+  .tale_form{
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+
+    font-size: 13px;
+    color: #ffffff;
+    opacity: 80%;
+  }
+
   /*---------------------------------------*/
   @media(max-width : 1000px){
   /* 전체 폼 스타일 */
@@ -127,6 +143,13 @@
     grid-row-start: 3;
     grid-row-end: 4;
 
+  }
+
+  .tale_box{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
   }
 
     /*리스트 폼 스타일*/
