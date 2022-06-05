@@ -343,8 +343,21 @@
     font-size: 4vw;
   }
 
+  .info_promote.txt.to{
+    pa
+    padding-right: 5px;
+  }
+
+  .info_promote.weapon_star_box{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    justify-items: none;
+  }
+
+
   .info_promote.weapon_star_box input[type=radio] + label {
-    font-size: 2vw;
+    font-size: 1rem;
   }
 
   .info_promote.exp_slider{
