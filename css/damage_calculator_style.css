@@ -98,6 +98,7 @@
 /*------------스킬 돌파 소재 정렬--------------*/
     .info_promote.char_combo_box_form.number_multiply{
       margin-right: 20px;
+      padding-right: 10px;
     }
 
 
@@ -292,6 +293,14 @@
       grid-row-end: 4;
     }
 
+    .info_promote.material.number_mora.weapon{
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      margin-left: 30px;
+    }
+
     .info_promote.material.number4.weapon{
       grid-column-start: 2;
       grid-column-end: 3;
@@ -340,7 +349,7 @@
   }
 
   .info_promote.txt{
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .info_promote.txt.to{
