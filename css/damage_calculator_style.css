@@ -348,6 +348,10 @@
     padding-right: 5px;
   }
 
+  .info_promote.char_combo_box{
+    font-size: 27px;
+  }
+
   .info_promote.weapon_star_box{
     display: grid;
     grid-template-columns: 1fr;
