@@ -1,0 +1,35 @@
+
+/*--------------------------------------------------*/
+
+    #index_button{
+      background-color: #537a90;
+    }
+
+    /* 메인 폼 스타일 */
+    .main_form.update_log{
+      color : #ffffff;
+      margin-left: 50px;
+    }
+
+
+
+
+    img{
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+
+
+/*---------------------------------------*/
+@media(max-width : 1000px){
+
+  /* 메인 폼 스타일 */
+  .main_form{
+    display: grid;
+      grid-template-columns: 1fr;
+  }
+
+
+
+}
