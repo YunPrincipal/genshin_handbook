@@ -22,8 +22,9 @@
       position: relative;
       top: 0;
       left: 0;
-      width: 1040px;
-      height: 710px;
+      /*1칸당 30px 추가*/
+      width: 1070px;
+      height: 700px;
       border-radius: 10px;
       margin-bottom: 20px;
     }
