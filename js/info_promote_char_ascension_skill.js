@@ -47,6 +47,7 @@ var char_info = [
     [4,"피슬","피슬","elec","bow","번개","뇌광 프리즘","등불꽃","역전의 화살촉","시문","북풍의 영혼상자"],
     [4,"행추","행추","water","sword","물","물처럼 맑은 마음","예상꽃","불길한 가면","황금","북풍의 꼬리"],
     [4,"향릉","향릉","fire","polearm","불","꺼지지 않는 불씨","절운고추","슬라임 원액","근면","동풍의 발톱"],
+    [4,"헤이조","시카노인 헤이조","wind","book","바람","룬 무늬 이빨","귀신 풍뎅이","골드 까마귀 휘장","부세","만겁의 진의"],
     [5,"호두","호두","fire","polearm","불","설익은 옥","예상꽃","원소 꽃꿀","근면","마왕의 칼날 조각"]
     ];
 
@@ -57,16 +58,17 @@ var char_info = [
   var category = ["ascension","skill"]
   var defalut_value = [[1,9,9,6,18,30,36,46,168,"420,000"],[3,21,38,6,6,22,31,1,"1,652,500","x 1"]]
 
+char_number = char_info.length - 1;
 
 /*---------------------콤보 박스 html-----------------*/
   ascension_combo_box_txt = "<select class='info_promote char_combo_box' name='char_name' onchange='ascension_combo_box_change(this.value)' >\n";
-  for (i =0; i<=46; i++){
+  for (i =0; i<=char_number; i++){
     ascension_combo_box_txt += "<option value='"+i+"'>"+char_info[i][1]+"</option>\n";
   }
   ascension_combo_box_txt += "</select>";
 
   skill_combo_box_txt = "<select class='info_promote char_combo_box' name='char_name' onchange='skill_combo_box_change(this.value)' >\n";
-  for (i =0; i<=46; i++){
+  for (i =0; i<=char_number; i++){
     skill_combo_box_txt += "<option value='"+i+"'>"+char_info[i][1]+"</option>\n";
   }
   skill_combo_box_txt += "</select>";
