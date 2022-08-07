@@ -1,18 +1,29 @@
 var today = new Date();
-var end_day = new Date ("2022-08-23 16:00:00")
-var next_end_day = new Date("2022-09-13 19:00:00")
+var end_day = new Date ("2022-08-23 16:00:00");
+var next_end_day = new Date("2022-09-13 19:00:00");
 
 var day_HTML = document.getElementById('day_interval');
 var day_HTML2 = document.getElementById('day_interval1');
 
-if (end_day < today){
+
+if (end_day >= today){
+  var wish_img1 = document.getElementById('wish_img_1');
+  var wish_img2 = document.getElementById('wish_img_2');
+
+  end_day = next_end_day;
+
+  wish_img1.src = "img/index/v2.81_char.jpg";
+  wish_img2.src = "img/index/v2.81_weapon.jpg";
+
+}
+  else{
   var wish_img1 = document.getElementById('wish_img_1');
   var wish_img2 = document.getElementById('wish_img_2');
 
   end_day = next_end_day;
 
   wish_img1.src = "img/index/v3.00_char.jpg";
-  wish_img2.src = "img/index/v3.00_weapon.jpg"
+  wish_img2.src = "img/index/v3.00_weapon.jpg";
 
 }
 
