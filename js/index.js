@@ -10,8 +10,6 @@ if (end_day >= today){
   var wish_img1 = document.getElementById('wish_img_1');
   var wish_img2 = document.getElementById('wish_img_2');
 
-  end_day = next_end_day;
-
   wish_img1.src = "img/index/v2.81_char.jpg";
   wish_img2.src = "img/index/v2.81_weapon.jpg";
 
