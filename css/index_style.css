@@ -57,7 +57,7 @@
       margin: 15px;
       border-radius: 10px;
       background-color: #2d3440;
-      grid-template-rows: 7% repeat(3,1fr);
+      grid-template-rows: 5% repeat(3,1fr);
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 1;
@@ -99,7 +99,7 @@
     .index_info_box_item.img{
       display: grid;
       margin: 10px;
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(4,1fr);
       grid-template-rows: 50% 50%;
     }
 
@@ -125,7 +125,7 @@
       background-color: #2d3440;
       opacity: 0.85;
       color: #ffffff;
-      font-size: 1.5vw;
+      font-size: 1.2vw;
       font-weight: bold;
       border-radius: 10px;
       align-items: center;
