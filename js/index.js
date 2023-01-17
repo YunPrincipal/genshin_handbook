@@ -1,6 +1,6 @@
 var today = new Date();
-var end_day = new Date ("2022-12-27 19:00:00");
-var next_end_day = new Date("2023-01-17 17:00:00");
+var end_day = new Date ("2023-02-07 19:00:00");
+var next_end_day = new Date("2023-02-28 16:00:00");
 
 var day_HTML = document.getElementById('day_interval');
 var day_HTML2 = document.getElementById('day_interval1');
@@ -10,8 +10,8 @@ if (end_day >= today){
   var wish_img1 = document.getElementById('wish_img_1');
   var wish_img2 = document.getElementById('wish_img_2');
 
-  wish_img1.src = "img/index/v3.30_char.jpg";
-  wish_img2.src = "img/index/v3.30_weapon.jpg";
+  wish_img1.src = "img/index/v3.40_char.jpg";
+  wish_img2.src = "img/index/v3.40_weapon.jpg";
 
 }
   else{
@@ -20,8 +20,8 @@ if (end_day >= today){
 
   end_day = next_end_day;
 
-  wish_img1.src = "img/index/v3.31_char.jpg";
-  wish_img2.src = "img/index/v3.31_weapon.jpg";
+  wish_img1.src = "img/index/v3.41_char.jpg";
+  wish_img2.src = "img/index/v3.41_weapon.jpg";
 
 }
 console.log('today :'+today);
