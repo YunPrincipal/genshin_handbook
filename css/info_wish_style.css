@@ -23,14 +23,14 @@
       top: 0;
       left: 0;
       /*1칸당 30px 추가*/
-      width: 1540px;
-      height: 970px;
+      width: 1570px;
+      height: 1000px;
       border-radius: 10px;
       margin-bottom: 20px;
     }
 
     .info_sheet.weapon{
-      height: 1135px;
+      height: 1165px;
     }
 
 
