@@ -1,6 +1,6 @@
-var today = new Date();
-var end_day = new Date ("2023-07-04 16:00:00"); //현재 픽업 끝나는 시간
-var next_end_day = new Date("2023-07-26 17:00:00"); //다음 픽업 끝나는 시간
+var today = new Date("2023-08-10 17:00:00");
+var end_day = new Date ("2023-07-25 19:00:00"); //현재 픽업 끝나는 시간
+var next_end_day = new Date("2023-08-15 17:00:00"); //다음 픽업 끝나는 시간
 
 var day_HTML = document.getElementById('day_interval');
 var day_HTML2 = document.getElementById('day_interval1');
@@ -10,8 +10,8 @@ if (end_day >= today){
   var wish_img1 = document.getElementById('wish_img_1');
   var wish_img2 = document.getElementById('wish_img_2');
 
-  wish_img1.src = "img/index/v3.71_char.jpg"; //현재 픽업 배너
-  wish_img2.src = "img/index/v3.71_weapon.jpg";
+  wish_img1.src = "img/index/v3.80_char.jpg"; //현재 픽업 배너
+  wish_img2.src = "img/index/v3.80_weapon.jpg";
 
 }
   else{
@@ -20,8 +20,8 @@ if (end_day >= today){
 
   end_day = next_end_day;
 
-  wish_img1.src = "img/index/v3.80_char.jpg"; //다음 픽업 배너
-  wish_img2.src = "img/index/v3.80_weapon.jpg";
+  wish_img1.src = "img/index/v3.81_char.jpg"; //다음 픽업 배너
+  wish_img2.src = "img/index/v3.81_weapon.jpg";
 
 }
 console.log('today :'+today);
