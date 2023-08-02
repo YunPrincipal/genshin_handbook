@@ -1,4 +1,4 @@
-var today = new Date("2023-08-10 17:00:00");
+var today = new Date();
 var end_day = new Date ("2023-07-25 19:00:00"); //현재 픽업 끝나는 시간
 var next_end_day = new Date("2023-08-15 17:00:00"); //다음 픽업 끝나는 시간
 
